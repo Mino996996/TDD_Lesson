@@ -12,5 +12,15 @@ namespace TDD_Lesson
         {
             return a + b;
         }
+
+        public static int Average(List<int> list)
+        {
+            int values = 0;
+            foreach(var val in list)
+            {
+                values += val;
+            }
+            return values / list.Count;
+        }
     }
 }
